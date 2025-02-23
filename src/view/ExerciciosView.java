@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class ExerciciosView{
     public static void main(String args[]){
         ExerciciosController ex = new ExerciciosController();
-        /*
+        
         //exercicio 01
             System.out.println("Exercicio 01");
             int valor = 138757;
@@ -46,9 +46,11 @@ public class ExerciciosView{
             entrada = Integer.parseInt(JOptionPane.showInputDialog("Entre com um valor: "));
         }while(entrada > 20);
         System.out.println(ex.Exercicio05(entrada));
-        */
 
         //Exercicio 06
         System.out.println(ex.Exercicio06(5));
+
+        //Exercicio 07
+        System.out.println(ex.Exercicio07(123));;
     }
 }

@@ -23,7 +23,7 @@ public class ExerciciosController{
     //Exercicio 02
     public int Exercicio02(int firstNumber, int secondNumber){
         //condição de parada: 
-        //quando o primeiro numero chega a 0 não haverá mais numeros a serem contados.
+        //quando o primeiro numero chegar a 0 não haverá mais numeros a serem contados.
         //isso corrige o erro do commit anterior onde o programa dava erro ao passar o numero 0 no segundo parametro sem terem zeros no primeiro.
         if(firstNumber == 0){
             return 0;
@@ -91,6 +91,18 @@ public class ExerciciosController{
         }else{
             //para cada termo da serie é somado 1/fatorial(n) ao resultado da chamada
             return (1/CalculaFatorial(value)) + Exercicio06(value - 1);
+        }
+    }
+
+    //Exercicio 07
+    public int Exercicio07(int value){
+        //condição de parada
+        ////quando o primeiro numero chegar a 0 não haverá mais numeros a serem contados.
+        if(value == 0){
+            return 0;
+        }else{
+            int resto = value%10;
+            return resto + Exercicio07(value/10);
         }
     }
 }
