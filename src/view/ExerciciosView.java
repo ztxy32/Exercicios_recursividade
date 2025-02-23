@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class ExerciciosView{
     public static void main(String args[]){
         ExerciciosController ex = new ExerciciosController();
-        
+        /*
         //exercicio 01
             System.out.println("Exercicio 01");
             int valor = 138757;
@@ -27,10 +27,13 @@ public class ExerciciosView{
 
             int vezes = ex.Exercicio02(firstNumber, secondNumber);
             System.out.println("O número "+secondNumber+" aparece "+vezes+" vezes em "+firstNumber);
+            
 
         //exercicio 03
             System.out.println("\nExercicio 03");
             System.out.println(ex.Exercicio03("Amanda"));
-        
+        */
+        //exercicio04
+        System.out.println(ex.Exercicio03(ex.Exercicio04(103)));// <- pra que fazer o mesmo código de novo se o exercicio 3 já inverte o número kkk
     }
 }

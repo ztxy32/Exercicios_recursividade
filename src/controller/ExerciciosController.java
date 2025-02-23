@@ -53,4 +53,12 @@ public class ExerciciosController{
             return lastCharactere + Exercicio03(text.substring(0,text.length()-1));
         }
     }
+    //Exercicio 04
+    public String Exercicio04(int value){
+        if(value == 0){
+            return "";
+        }else{
+            return String.valueOf(value % 2) + Exercicio04(value/2);
+        }
+    }
 }
