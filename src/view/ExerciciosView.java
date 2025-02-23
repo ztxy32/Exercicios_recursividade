@@ -32,8 +32,19 @@ public class ExerciciosView{
         //exercicio 03
             System.out.println("\nExercicio 03");
             System.out.println(ex.Exercicio03("Amanda"));
-        */
-        //exercicio04
+        
+        //exercicio 04
+        int valor2;
+        do{
+            valor2 = Integer.parseInt(JOptionPane.showInputDialog("Número a ser convertido: "));
+        }while(valor2 > 2000);
         System.out.println(ex.Exercicio03(ex.Exercicio04(103)));// <- pra que fazer o mesmo código de novo se o exercicio 3 já inverte o número kkk
+        */
+        //exercicio 05
+        int entrada = 0;
+        do{
+            entrada = Integer.parseInt(JOptionPane.showInputDialog("Entre com um valor: "));
+        }while(entrada > 20);
+        System.out.println(ex.Exercicio05(entrada));
     }
 }

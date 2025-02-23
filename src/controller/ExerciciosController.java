@@ -61,4 +61,17 @@ public class ExerciciosController{
             return String.valueOf(value % 2) + Exercicio04(value/2);
         }
     }
+
+    //Exercicio 05
+    public int Exercicio05(int value){
+        //condição de parada:
+        //se o valor for igual a 1 ou 2 retorna 1 pois os dois primeiros valores da sequencia são o 1
+        if(value == 1 || value == 2){
+            return 1;
+        }else{
+            return Exercicio05(value - 1) + Exercicio05(value - 2);
+        }
+    }
+
+    //Exercicio 06
 }
