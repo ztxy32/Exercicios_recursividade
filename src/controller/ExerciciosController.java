@@ -74,4 +74,23 @@ public class ExerciciosController{
     }
 
     //Exercicio 06
+    private int CalculaFatorial(int value){
+        //condição de parada:
+        //o fatorial de 1 é == 1 então retorna 1
+        if(value == 1){
+            return 1;
+        }else{
+            return value *CalculaFatorial(value -1);
+        }
+    }
+    public int Exercicio06(int value){
+        //condição de parada:
+        //quando o valor for 0 a função retorna 1 porque a expressão começa com 1
+        if(value == 0){
+            return 1;
+        }else{
+            //para cada termo da serie é somado 1/fatorial(n) ao resultado da chamada
+            return (1/CalculaFatorial(value)) + Exercicio06(value - 1);
+        }
+    }
 }
