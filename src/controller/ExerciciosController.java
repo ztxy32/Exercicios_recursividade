@@ -23,8 +23,9 @@ public class ExerciciosController{
     //Exercicio 02
     public int Exercicio02(int firstNumber, int secondNumber){
         //condição de parada: 
-        //o primeiro numero não pode ser mais dividido e não é igual ao segundo numero
-        if(firstNumber/10 < secondNumber && firstNumber != secondNumber){
+        //quando o primeiro numero chega a 0 não haverá mais numeros a serem contados.
+        //isso corrige o erro do commit anterior onde o programa dava erro ao passar o numero 0 no segundo parametro sem terem zeros no primeiro.
+        if(firstNumber == 0){
             return 0;
         }else{
             //pega o a representação do ultimo numero pelo resto da divisão por 10
@@ -39,6 +40,5 @@ public class ExerciciosController{
             //se não for igual será somado com o 0 da declaração do contador
             return count + Exercicio02(firstNumber/10, secondNumber);
         }
-        
     }
 }
