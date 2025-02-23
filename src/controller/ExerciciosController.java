@@ -41,4 +41,16 @@ public class ExerciciosController{
             return count + Exercicio02(firstNumber/10, secondNumber);
         }
     }
+
+    //Exercicio 03
+    public String Exercicio03(String text){
+        //condição de parada: quando não quando não ouver mais caracteres na string retorna;
+        if(text.isEmpty()){
+            return text;
+        }else{
+            String lastCharactere = text.substring(text.length() - 1);//pega o ultimo caractere da string
+            //cria uma nova string com um caractere a mais até que não tenham mais caracteres na estring
+            return lastCharactere + Exercicio03(text.substring(0,text.length()-1));
+        }
+    }
 }
